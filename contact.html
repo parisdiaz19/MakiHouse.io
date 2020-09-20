@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>  
+    <script src="https://kit.fontawesome.com/920fff83c0.js" crossorigin="anonymous"></script>  
+    <title>Document</title>
+
+</head>
+<body class="blue lighten-5">
+    <!--Navbar-->
+    <nav>
+        <div class="nav-wrapper indigo">
+          <a href="#" class="brand-logo right"><img class="logo" src="img/logo.png" alt=""></a>
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Our Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      
+      <ul class="sidenav" id="mobile-demo">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Our Menu</a></li>
+        <li><a href="contact.html">Contact/Reserve</a></li>
+      </ul>
+
+      <script>
+          $(document).ready(function(){
+    $('.sidenav').sidenav();
+     });
+      </script>
+
+      
+<!--Contact Form-->
+<div class="container">
+    <h4>Register With Us</h4>
+    <p>With this form, you can register to be up to date with our updates and promotions!</p>
+<div class="row">
+    <form id='form' class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="username" type="text" class="validate">
+          <label for="username">Username</label>
+          <small>Error message</small>
+        </div>
+        <div class="row"></div>
+        <div class="input-field col s6">
+          <input id="password" type="text" class="validate">
+          <label for="password">Password</label>
+          <small>Error message</small>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="email" type="email" class="validate">
+          <label for="email">Email</label>
+          <small>Error Message</small>
+        </div>
+      </div>
+      </div>
+      <button class="btn waves-effect waves-light submit" type="submit" name="action">Submit
+        <i class="material-icons right">send</i>
+      </button>          
+    </form>
+  </div>
+</div>
+
+<!--Footer-->
+<footer class="page-footer indigo">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Our Hours</h5>
+        <p class="grey-text text-lighten-4">Monday-Saturday: 6pm - 2am</p>
+        <p class="gret-text text-lighten-4">Sunday: Closed</p>
+        <h5 class="white-text">Our Locations</h5>
+        <li><a href="" class="grey-text text-lighten-4">New York</a></li>
+        <li><a href="" class="grey-text text-lighten-4">Los Angeles</a></li>
+        <li><a href="" class="grey-text text-lighten-4">Tokyo</a></li>
+        <img class="footer-img responsive-img" src="img/logo.png" alt="">
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Follow Us!</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="#!"><i class="fab fa-instagram fa-2x"></i></a></li>
+          <li><a class="grey-text text-lighten-3" href="#!"><i class="fab fa-facebook-square fa-2x"></i></a></li>
+          <li><a class="grey-text text-lighten-3" href="#!"><i class="fab fa-yelp fa-2x"></i></a></li>
+          <li><a class="grey-text text-lighten-3" href="#!"><i class="fab fa-twitter fa-2x"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+    <p class="center-align">© 2020 Maki House</p>
+
+    </div>
+  </div>
+</footer>
+
+<script src="book.js"></script>
+<script src="app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>     
+<script type="text/javascript" src="js/materialize.min.js"></script>
+   
+</body>
+</html>

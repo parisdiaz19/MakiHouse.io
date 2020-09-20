@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>  
+    <script src="https://kit.fontawesome.com/920fff83c0.js" crossorigin="anonymous"></script> 
+    <title>Maki House</title>
+
+</head>
+<body class="blue lighten-5">
+    <!--Navbar-->
+    <nav>
+        <div class="nav-wrapper indigo">
+          <a href="#" class="brand-logo right"><img class='logo' src="img/logo.png" alt=""></a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Our Menu</a></li>
+            <li><a href="contact.html">Contact/Reserve</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <ul class="sidenav" id="mobile-demo">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Our Menu</a></li>
+        <li><a href="contact.html">Contact/Reserve</a></li>
+      </ul>
+
+      <script>
+          $(document).ready(function(){
+    $('.sidenav').sidenav();
+     });
+      </script>
+
+      
+      <!--Hero Silder-->
+      <div class="slider">
+        <ul class="slides">
+          <li>
+            <img src="img/slider1.jpg"> <!-- random image -->
+            <div class="caption left-align">
+              <h3 class="black">Welcome to Maki House</h3>
+              <h5 class="black">Home to authentic, hand crafted Japanese cuisine</h5>
+            </div>
+          </li>
+          <li>
+            <img src="img/slider2.jpg"> <!-- random image -->
+            <div class="caption right-align">
+              <h3 class="black">Sushi Made With Care</h3>
+              <h5 class="black">We have customizable sushi rolls that will satisfy anyone's tastebuds</h5>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!--Menu-->
+
+      <div class="container">
+      <div class="divider black "></div>
+      <div class="row ">
+      <div class="col s6">
+        <h5 class="left-align">Sushi Platters and More</h5>
+        <img class="materialboxed responsive-img" width="500" src="img/menu1.jpg">
+        </div>
+        <div class="col s6">
+        <h5 class="right-align">We prepare fresh sushi to order in rolls, 
+          or even platters for large scale events.</p>
+          <p>We craft sushi in many different ways...</p>
+          <ul>
+            <li>Rolls</li>
+            <li>Temaki</li>
+            <li>Sashimi</li>
+            <li>Onigiri</li>
+            <li>Maki</li>
+          </ul>
+        <a href="menu.html" class="waves-effect waves-light btn-small">See Sushi Menu</a>
+        </div>
+        </div>
+      <div class="divider black"></div>
+        <div class="row">
+            <div class="col s6">
+        <h5 class="left-align">Bar Seating Area</h5>
+        <img class="materialboxed responsive-img" width="500" src="img/menu2.jpg">
+    </div>
+        <h5 class="right-align">Our bar has a large variety of wines, spirits, and liquors in order to please the needs
+            of date nights, and large events.
+        </p>
+        <p>Some of our choices include:</p>
+        <ul>
+          <li>Nihonshu(Sake)</li>
+          <li>Shochu</li>
+          <li>Awamori</li>
+          <li>Beer</li>
+        </ul>
+        <a href="menu.html" class="waves-effect waves-light btn-small">See Bar Menu</a>
+        </div>  
+  </div> 
+
+
+      <script>
+        $(document).ready(function(){
+           $('.slider').slider();
+           $(".dropdown-button").dropdown();
+       });
+
+       $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+     </script>
+
+
+<!--Footer-->
+<footer class="page-footer indigo">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Our Hours</h5>
+          <p class="grey-text text-lighten-4">Monday-Saturday: 6pm - 2am</p>
+          <p class="gret-text text-lighten-4">Sunday: Closed</p>
+          <h5 class="white-text">Our Locations</h5>
+          <li><a href="" class="grey-text text-lighten-4">New York</a></li>
+          <li><a href="" class="grey-text text-lighten-4">Los Angeles</a></li>
+          <li><a href="" class="grey-text text-lighten-4">Tokyo</a></li>
+          <img class="footer-img responsive-img" src="img/logo.png" alt="">
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Follow Us!</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!"><i class="fab fa-instagram fa-2x"></i></a></li>
+            <li><a class="grey-text text-lighten-3" href="#!"><i class="fab fa-facebook-square fa-2x"></i></a></li>
+            <li><a class="grey-text text-lighten-3" href="#!"><i class="fab fa-yelp fa-2x"></i></a></li>
+            <li><a class="grey-text text-lighten-3" href="#!"><i class="fab fa-twitter fa-2x"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      <p class="center-align">© 2020 Maki House</p>
+
+      </div>
+    </div>
+  </footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>     
+<script type="text/javascript" src="js/materialize.min.js"></script>
+   
+</body>
+</html>

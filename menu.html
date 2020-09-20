@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://kit.fontawesome.com/920fff83c0.js" crossorigin="anonymous"></script>    
+    <title>Document</title>
+
+</head>
+<body class="blue lighten-5">
+    <!--Navbar-->
+    <nav>
+        <div class="nav-wrapper indigo">
+          <a href="#" class="brand-logo right"><img class='logo' src="img/logo.png" alt=""></a>
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Our Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      
+      <ul class="sidenav" id="mobile-demo">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Our Menu</a></li>
+        <li><a href="contact.html">Contact/Reserve</a></li>
+      </ul>
+
+      <script>
+          $(document).ready(function(){
+    $('.sidenav').sidenav();
+     });
+      </script>
+
+      
+      <!--Carousel-->
+
+      
+    <div class="carousel indigo lighten-5">
+    <a class="carousel-item" href="#one!"><img src="https://images.unsplash.com/photo-1455279032140-49a4bf46f343?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"></a>
+    <a class="carousel-item" href="#two!"><img src="https://images.unsplash.com/photo-1558985212-92c2ff0b56e7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"></a>
+    <a class="carousel-item" href="#three!"><img src="https://images.unsplash.com/photo-1588182728399-e8f2df121744?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"></a>
+    <a class="carousel-item" href="#four!"><img src="https://images.unsplash.com/photo-1571762450239-f0f047321444?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80"></a>
+    <a class="carousel-item" href="#five!"><img src="https://images.unsplash.com/photo-1555407792-c433107e860f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"></a>
+    </div>
+      <script>
+      $(document).ready(function(){
+        $('.carousel').carousel();
+      });
+
+      $('.carousel.carousel-slider').carousel({
+    fullWidth: true
+  });
+    </script>
+     
+      <!--Menu-->
+
+    
+       <div class="container ">
+      <table>
+        <thead>
+          <tr>
+              <th>Appetizers</th>
+              <th>Price</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Harajuku Summer Salad</td> 
+            <td>7</td>
+          </tr>
+          <tr>
+            <td>Fried Takoyaki</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <td>Edamame</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Teriyaki Skewers</td> 
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>Seaweed Salad</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Tempura Mix</td>
+            <td>7</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+
+      <div class="divider black"></div>
+
+      <div class="container">
+      <table>
+        <thead>
+          <tr>
+              <th>Sushi</th>
+              <th>Price</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Salmon Golden Crunchy Roll</td> 
+            <td>14</td>
+          </tr>
+          <tr>
+            <td>Rainbow Roll</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>Golden Crunchy Roll</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>Tiger Roll</td> 
+            <td>14</td>
+          </tr>
+          <tr>
+            <td>Spicy Tuna/Salmon Roll</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td>Dragon Roll</td>
+            <td>11</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+
+
+<!--Footer-->
+<footer class="page-footer indigo">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Our Hours</h5>
+        <p class="grey-text text-lighten-4">Monday-Saturday: 6pm - 2am</p>
+        <p class="gret-text text-lighten-4">Sunday: Closed</p>
+        <h5 class="white-text">Our Locations</h5>
+        <li><a href="" class="grey-text text-lighten-4">New York</a></li>
+        <li><a href="" class="grey-text text-lighten-4">Los Angeles</a></li>
+        <li><a href="" class="grey-text text-lighten-4">Tokyo</a></li>
+        <img class="footer-img responsive-img" src="img/logo.png" alt="">
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Follow Us!</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="#!"><i class="fab fa-instagram fa-2x"></i></a></li>
+          <li><a class="grey-text text-lighten-3" href="#!"><i class="fab fa-facebook-square fa-2x"></i></a></li>
+          <li><a class="grey-text text-lighten-3" href="#!"><i class="fab fa-yelp fa-2x"></i></a></li>
+          <li><a class="grey-text text-lighten-3" href="#!"><i class="fab fa-twitter fa-2x"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+    <p class="center-align">© 2020 Maki House</p>
+
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>     
+<script type="text/javascript" src="js/materialize.min.js"></script>
+   
+</body>
+</html>
