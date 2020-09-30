@@ -20,3 +20,12 @@ body {
     flex: 1 0 auto;
 }
 
+td {
+    cursor: pointer;
+}
+
+li {
+    display: inline;
+}
+
+
